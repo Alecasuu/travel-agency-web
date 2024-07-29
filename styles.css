@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+input, button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-verde {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    grid-column: span 2; /* Esto hace que el botón ocupe ambas columnas */
+    justify-self: center; /* Esto centra el botón */
+    width: 50%; /* Ajusta el ancho del botón */
+}
+
+.btn-verde:hover {
+    background-color: #45a049;
+}
+
+.btn-rojo {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Nueva clase para alinear el botón a la derecha */
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-rojo:hover {
+    background-color: #d32f2f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agencia de Viajes</h1>
+        
+        <div class="form-container">
+            <h2>Registrar Vuelo</h2>
+            <form id="vuelo-form" action="procesar_vuelo.php" method="post">
+                <input type="text" name="origen" placeholder="Origen" required>
+                <input type="text" name="destino" placeholder="Destino" required>
+                <input type="date" name="fecha" required>
+                <input type="number" name="plazas" placeholder="Plazas disponibles" required>
+                <input type="number" name="precio" placeholder="Precio" step="0.01" required>
+                <button type="submit" class="btn-verde">Registrar Vuelo</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Registrar Hotel</h2>
+            <form id="hotel-form" action="procesar_hotel.php" method="post">
+                <input type="text" name="nombre" placeholder="Nombre del hotel" required>
+                <input type="text" name="ubicacion" placeholder="Ubicación" required>
+                <input type="number" name="habitaciones" placeholder="Habitaciones disponibles" required>
+                <input type="number" name="tarifa" placeholder="Tarifa por noche" step="0.01" required>
+                <button type="submit" class="btn-verde">Registrar Hotel</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Consultar Reservas por Hotel</h2>
+            <form action="consultar_reservas.php" method="get">
+                <button type="submit" class="btn-verde">Consultar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
